@@ -16,6 +16,20 @@ namespace aspnetWebFormsDemo01
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Application["SessionCount"] = 0;
+        }
+        void Session_Start(object sender, EventArgs e) {
+
+            int count = (int)Application["SessionCount"];
+            count++;
+            Application["SessionCount"] = count;
+        }
+        void Session_End(object sender, EventArgs e)
+        {
+            int count = (int)Application["SessionCount"];
+            count--;
+            Application["SessionCount"] = count;
         }
     }
 }
