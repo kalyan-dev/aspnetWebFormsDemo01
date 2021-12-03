@@ -114,6 +114,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="FirstPage.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -126,6 +127,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Hello.aspx" />
+    <Content Include="PostBackDemo.aspx" />
     <Content Include="PriceCalculator.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -155,7 +157,11 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="SecondPage.aspx" />
+    <Content Include="ShowMovies.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="TakeCity.aspx" />
+    <Content Include="UploadPhoto.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -185,6 +191,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FirstPage.aspx.cs">
+      <DependentUpon>FirstPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FirstPage.aspx.designer.cs">
+      <DependentUpon>FirstPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -195,6 +208,13 @@
     <Compile Include="Hello.aspx.designer.cs">
       <DependentUpon>Hello.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PostBackDemo.aspx.cs">
+      <DependentUpon>PostBackDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostBackDemo.aspx.designer.cs">
+      <DependentUpon>PostBackDemo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PriceCalculator.aspx.cs">
       <DependentUpon>PriceCalculator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -203,6 +223,20 @@
       <DependentUpon>PriceCalculator.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecondPage.aspx.cs">
+      <DependentUpon>SecondPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecondPage.aspx.designer.cs">
+      <DependentUpon>SecondPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMovies.aspx.cs">
+      <DependentUpon>ShowMovies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowMovies.aspx.designer.cs">
+      <DependentUpon>ShowMovies.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -217,6 +251,20 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="TakeCity.aspx.cs">
+      <DependentUpon>TakeCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TakeCity.aspx.designer.cs">
+      <DependentUpon>TakeCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadPhoto.aspx.cs">
+      <DependentUpon>UploadPhoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadPhoto.aspx.designer.cs">
+      <DependentUpon>UploadPhoto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -227,6 +275,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Photos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
